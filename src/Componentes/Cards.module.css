@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-bottom: solid 1px #0000004c;
+    padding: 10px;
+    gap: 10px;
+}
