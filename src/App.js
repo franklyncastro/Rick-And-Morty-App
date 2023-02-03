@@ -10,13 +10,13 @@ function App () {
         <Nav/> 
        
       </div>
-      <hr />
+      
       <div>
         <Cards
           characters={characters}
         />
       </div>
-      <hr />
+   
       <div>
        
       </div>
