@@ -1,0 +1,30 @@
+.container{
+    box-shadow: 2px 5px 8px #9FC131, 2px -3px 8px #DBF227;
+    width: 100%;
+    padding: 10px;
+    background-color: #042940;
+    margin-bottom: 20px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.containerLogo{
+    border: solid 1px #DBF227;
+    color: #fff;
+    box-shadow: 2px 5px 8px #9FC131, 2px -3px 8px #DBF227;
+    padding: 10px;
+    cursor: pointer;
+    transition: .7s;
+}
+
+.containerLogo:hover{
+    box-shadow: 10px 15px 18px #f0f1ea, -10px -13px 18px #e6e7df;
+    transition: .7s;
+    color: #DBF227;
+    
+}

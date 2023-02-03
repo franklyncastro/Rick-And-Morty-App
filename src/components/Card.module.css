@@ -1,0 +1,74 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    transition: all .3s;
+    margin: 10px;
+}
+
+.containerCard{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 250px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #DBF227;
+    transition: all .2s;
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+    
+}
+
+
+
+.containerCard:hover{
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+.nameText{
+     font-family: 'Russo One', sans-serif;
+     border: solid 1px #005C53;
+}
+
+.containerCard:hover{
+    box-shadow: rgb(98, 250, 9) 0px 30px 60px -5px;
+}
+
+.containerImg img{
+    border-radius: 50%;
+    cursor: pointer;
+    width: 200px;
+    
+}
+
+.containerText{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btnContainer button{
+    font-family: 'Russo One', sans-serif;
+    background-color: #CC0515;
+    border: none;
+    color: #fff;
+    width: 2rem;
+    height: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.textInfo{
+    padding: 5px;
+}
+

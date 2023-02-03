@@ -1,22 +1,30 @@
+@import url("https://fonts.googleapis.com/css?family=Russo+One|Ubuntu");
+
+
 *{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Oxygen', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-html, body{
-  font-family: Lato, sans-serif;
-  font-size: 16px;
-  text-align: center;
+.App {
+   text-align: center;
+   font-family: 'Ubuntu', sans-serif;
+   /* font-family: 'Russo One', sans-serif; */
+
 }
 
-.App{
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+hr{
+   margin: 10px;
+   padding: 10px;
+   background-color: transparent;
+   border: none;
 }
 
 body{
-  background-image: url('./img/rick.png');
+  background-image: url('./img/rick2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
 }

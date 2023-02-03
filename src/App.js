@@ -1,35 +1,24 @@
 import './App.css'
-import About from './Componentes/About'
-import Card from './Componentes/Card'
-import Cards from './Componentes/Cards'
-import Nav from './Componentes/Nav'
-import SearchBar from './Componentes/SearchBar'
-import characters, { Rick } from './data'
-import { Routes, Route } from 'react-router-dom'
+import Cards from './components/Cards.jsx'
+import characters, { Rick } from './data.js'
+import Nav from './components/Nav.jsx'
 
 function App () {
   return (
-    <div className='App' style={{ padding: '25px' }}>
-      <Nav/>
-      
+    <div className='App'>
       <div>
-        <Card
-          name={Rick.name}
-          species={Rick.species}
-          gender={Rick.gender}
-          image={Rick.image}
-          onClose={() => window.alert('Emulamos que se cierra la card')}
-        />
+        <Nav/> 
+       
       </div>
+      <hr />
       <div>
         <Cards
           characters={characters}
         />
       </div>
+      <hr />
       <div>
-        <SearchBar
-          onSearch={(characterID) => alert(characterID)}
-        />
+       
       </div>
     </div>
   )
