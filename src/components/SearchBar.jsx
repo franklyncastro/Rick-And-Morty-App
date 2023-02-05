@@ -1,10 +1,24 @@
 import style from './SearchBar.module.css';
+import { useState } from "react";
+import React from 'react';
 
-export default function SearchBar({ onSearch }) {
+export default function SearchBar({ onSearch, random }) {
+
+  const [character, setCharacter] = useState(0);
+
+  const handleSearch = (event) => {
+    let { value } = event.target;
+    setCharacter(value);
+  };
+
   return (
     <div className={style.container}>
-      <input type="search" className={style.input} placeholder='Buscar'/>
-      <button onClick={onSearch} className={style.btn}><span>Agregar</span></button>
+      <input type="search" className={style.input} placeholder='Buscar'onChange={handleSearch}/>
+      <button onClick={()=> onSearch(character)} className={style.btn}><span>Agregar</span></button>
+
+      <button className={style.btn} onClick={random}>
+        Aleatorio
+      </button>
     </div>
   );
 }

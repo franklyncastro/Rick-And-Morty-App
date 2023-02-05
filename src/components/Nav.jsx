@@ -2,7 +2,7 @@ import React from 'react';
 import SearchBar from './SearchBar';
 import style from './Nav.module.css';
 
-export default function Nav() {
+export default function Nav({ onSearch, random }) {
   return (
     <div className={style.container}>
       <div className={style.containerLogo}>
@@ -12,7 +12,7 @@ export default function Nav() {
       </div>
       <div>
         <SearchBar
-        onSearch={(characterID) => alert(characterID)}
+        onSearch={onSearch} random={random}
         />
       </div>
     </div>

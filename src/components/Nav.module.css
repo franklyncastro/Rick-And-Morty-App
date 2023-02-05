@@ -4,14 +4,12 @@
     padding: 10px;
     background-color: #042940;
     margin-bottom: 20px;
-}
-
-.container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 
 .containerLogo{
     border: solid 1px #DBF227;
@@ -27,4 +25,31 @@
     transition: .7s;
     color: #DBF227;
     
+}
+
+
+@media (max-width: 600px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .containerLogo{
+        font-size: 12px;
+    }
+}
+@media (max-width: 950px) {
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .containerLogo{
+        font-size: 12px;
+    }
 }
