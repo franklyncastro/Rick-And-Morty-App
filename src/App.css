@@ -22,9 +22,23 @@ hr{
 }
 
 body{
-  /* background-image: url('./img/rick2.jpg');
+  background-image: url('./img/rick2.jpg');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; */
+  height: 100vh;
   
-/* background-color: black; */
+}
+
+@media (max-width: 768px) {
+   body{
+      background-image: url('./img/bodyImg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      background-attachment: fixed;
+      
+      
+   }
 }
