@@ -1,7 +1,10 @@
 import "./App.css";
+import { About } from "./components/About";
 import Cards from "./components/Cards.jsx";
 import Nav from "./components/Nav.jsx";
 import { useState } from "react";
+import {Routes, Route} from "react-router-dom"
+import { Detail } from "./components/Detail";
 // import characters, { Rick } from './data.js'
 
 function App() {
@@ -38,8 +41,19 @@ function App() {
       </div>
 
       <div>
-        <Cards characters={characters} onClose={onClose} />
+      <Routes>
+        <Route path="/" element={ <Cards characters={characters} onClose={onClose} />}/>
+      </Routes>
+       
       </div>
+
+      <Routes>
+        <Route path="/about" element={<About/>}/>
+      </Routes>
+      <Routes>
+        <Route path="/datail/:detailID" element={<Detail/>}/>
+      </Routes>
+
     </div>
   );
 }

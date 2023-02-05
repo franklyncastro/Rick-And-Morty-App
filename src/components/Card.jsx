@@ -1,16 +1,17 @@
+import { Link } from "react-router-dom";
 import style from "./Card.module.css";
-import React from 'react';
+import React from "react";
 
-
-
-export default function Card({image, name, species, gender, onClose}) {
+export default function Card({ image, name, species, gender, onClose, id }) {
   return (
     <div className={style.container}>
+      <Link to={`/detail/${id}`}>
+      
+      
       <div className={style.containerCard}>
         <div className={style.btnContainer}>
-
           {/* Boton Delete */}
-          
+
           <button onClick={onClose} className={style.btnX}>
             <p className={style.paragraph}> delete </p>
             <span className={style.iconWrapper}>
@@ -35,16 +36,17 @@ export default function Card({image, name, species, gender, onClose}) {
 
           {/* Boton Delete */}
         </div>
+        
         <dir className={style.containerImg}>
-          <img src={image} alt="img not found" />
+            <img src={image} alt="img not found" />
         </dir>
         <h2 className={style.nameText}>{name}</h2>
         <div className={style.containerText}>
           <h2 className={style.textInfo}>{species}</h2>
           <h2 className={style.textInfo}>{gender}</h2>
         </div>
-
       </div>
+      </Link>
     </div>
   );
 }

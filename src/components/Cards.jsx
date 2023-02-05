@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Card from "./Card";
 import style from './Cards.module.css';
 import React from 'react';
@@ -19,6 +20,7 @@ export default function Cards({ characters, onClose }) {
         
         )
       }
+      
     </div>
   );
 }
