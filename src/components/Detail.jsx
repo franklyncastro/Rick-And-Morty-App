@@ -25,7 +25,7 @@ export const Detail = () => {
 
   return (
     <div className={style.container}>
-            
+       
     </div>
   )
 }

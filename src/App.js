@@ -43,17 +43,11 @@ function App() {
       <div>
       <Routes>
         <Route path="/" element={ <Cards characters={characters} onClose={onClose} />}/>
-      </Routes>
-       
-      </div>
-
-      <Routes>
+        <Route exact path='/detail/:detailId' element={<Detail/>}/>
         <Route path="/about" element={<About/>}/>
-      </Routes>
-      <Routes>
         <Route path="/datail/:detailID" element={<Detail/>}/>
       </Routes>
-
+      </div>
     </div>
   );
 }

@@ -5,7 +5,16 @@ import { Link } from 'react-router-dom';
 export const About = () => {
   return (
     <div className={style.container}>
-        <h1>About</h1>
+        <h1>About me:</h1>
+        <div className={style.containerP}>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae veritatis consequuntur tempore soluta quas ab necessitatibus corporis nobis, nisi debitis possimus quis, quos harum accusantium inventore, iste velit esse quibusdam.</p>
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae veritatis consequuntur tempore soluta quas ab necessitatibus corporis nobis, nisi debitis possimus quis, quos harum accusantium inventore, iste velit esse quibusdam.</p>
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae veritatis consequuntur tempore soluta quas ab necessitatibus corporis nobis, nisi debitis possimus quis, quos harum accusantium inventore, iste velit esse quibusdam.</p>
+
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae veritatis consequuntur tempore soluta quas ab necessitatibus corporis nobis, nisi debitis possimus quis, quos harum accusantium inventore, iste velit esse quibusdam.</p>
+        </div>
     </div>
   )
 }
