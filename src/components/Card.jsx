@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import style from "./Card.module.css";
 import React from "react";
 
-export default function Card({ image, name, species, gender, onClose, id }) {
+export default function Card({ image, name, species, gender, onClose, id}) {
   return (
     <div className={style.container}>
       
@@ -38,7 +38,7 @@ export default function Card({ image, name, species, gender, onClose, id }) {
           {/* Boton Delete */}
         </div>
         <Link to={`/detail/${id}`}> 
-          <h2 className={style.textInfo}>Detalle</h2>
+          <h2 className={style.textInfo}>{name}</h2>
         </Link>
         <dir className={style.containerImg}>
             <img src={image} alt="img not found" />
