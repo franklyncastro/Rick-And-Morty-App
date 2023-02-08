@@ -21,10 +21,7 @@
     background-color: #DBF227;
     transition: all .4s;
     box-shadow: 0px 0px 30px 1px rgba(0, 181, 85, 0.3);
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -ms-transition: all .4s;
-    -o-transition: all .4s;
+  
 }
 
 .containerCard:hover{
