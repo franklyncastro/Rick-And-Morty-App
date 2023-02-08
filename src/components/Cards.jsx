@@ -15,6 +15,7 @@ export default function Cards({ characters, onClose }) {
           species={character.species}
           gender={character.gender}
           image={character.image}
+          id={character.id}
           onClose={() => onClose(character.id)}
         />
         

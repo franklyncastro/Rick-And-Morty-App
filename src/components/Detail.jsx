@@ -26,11 +26,17 @@ export const Detail = () => {
 
   return (
     <div className={style.container}>
-      <h1>Detalle</h1>
+      <h1>Detalles del personaje</h1>
       {
-        character.map(charr =>{
-          return <li>{charr.name}</li>
-        })
+        <div className={style.container} >
+          <h2><strong>Name:</strong> {character.name}</h2>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </div>
+
       }
 
        
