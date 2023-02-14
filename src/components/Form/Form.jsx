@@ -1,30 +1,38 @@
 import React from "react";
 import { useState } from "react";
 import style from "./Form.module.css";
+import { validation } from "./validation";
 
-const Form = () => {
-  const [form, setForm] = useState({
-    name: "",
+const Form = ({ login }) => {
+  const [userData, setUserData] = useState({
+    username: "",
+    password: "",
+  });
+
+  const [errors, setErrors] = useState({
+    username: "",
     password: "",
   });
 
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
-
-    setForm({
-      ...form,
+    setUserData({
+      ...userData,
       [name]: value,
     });
+
+    setErrors(
+      validation({
+        ...userData,
+        [name]: value,
+      })
+    );
   };
 
   const handleSubmit = (e) => {
+      login(userData);
     e.preventDefault();
-
-    setForm({
-      name: "",
-      password: "",
-    });
   };
 
   return (
@@ -40,25 +48,38 @@ const Form = () => {
         </div>
         <h1 className={style.h1Login}>Login</h1>
         <div className={style.inputContainer}>
-          <input
-            type="text"
-            name="user"
-            placeholder="Ingrese Usuario"
-            onChange={handleChange}
-            className={style.input}
-          />
-        
-          <input
-            type="password"
-            name="password"
-            placeholder="Ingrese Contraceña"
-            onChange={handleChange}
-            className={style.input}
-          />
-        <div>
-          <button type="submit" className={style.button}>Iniciar</button>
+          <div className={style.containerInputs}>
+            <input
+              type="email"
+              name="username"
+              placeholder="Ingrese Usuario"
+              onChange={handleChange}
+              className={style.input}
+              value={userData.username}
+              required
+            />
+            {errors.username && <p className={style.warning}>*</p>}
+          </div>
+          <div className={style.containerInputs}>
+            <input
+              type="password"
+              name="password"
+              placeholder="Ingrese Contraceña"
+              onChange={handleChange}
+              className={style.input}
+              value={userData.password}
+              required
+            />
+            {errors.password && <p className={style.warning}>*</p>}
+          </div>
+          <div>
+            <button type="submit" className={style.button}>
+              Iniciar
+            </button>
+          </div>
         </div>
-        </div>
+        {errors.username && <p className={style.warning2}>{errors.username}</p>}
+        {errors.password && <p className={style.warning2}>{errors.password}</p>}
       </form>
     </div>
   );

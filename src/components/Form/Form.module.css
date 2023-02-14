@@ -14,8 +14,8 @@ color: greenyellow;
 
 .form{
     box-shadow: rgba(20, 57, 20, 0.7) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    height: 450px;
-    width: 300px;
+    height: 500px;
+    width: 360px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -116,12 +116,12 @@ color: greenyellow;
     transition: .3s cubic-bezier(0.645, 0.045, 0.355, 1);
    }
    
-   .input:focus, input:hover {
+   /* .input:focus, input:hover {
     outline: none;
     padding: .2rem 1rem;
     border-radius: 1rem;
     border-color: #29e610;
-   }
+   } */
    
    .input::placeholder {
     color: #fff;
@@ -154,6 +154,20 @@ color: greenyellow;
                 inset -4px -4px 12px #ffffff;
    }
    
-   
-   
-   
+   .warning{
+    color: red;
+    font-size: 18px;
+    position: relative;
+    left: 40px;
+   }
+   .warning2{
+    color: red;
+    font-size: 12px;
+    background-color: #e8e8e8;
+    text-align: center;
+   }
+
+   .containerInputs{
+    display: flex;
+    align-items: center;
+   }
