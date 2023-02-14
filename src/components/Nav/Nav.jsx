@@ -6,19 +6,18 @@ import { Link } from "react-router-dom";
 export default function Nav({ onSearch, random }) {
   return (
     <div className={style.container}>
-      <div className={style.containerLogo}>
-        <h1 className={style.logo}>Franklyn Dev</h1>
-      </div>
-
+      <div className={style.containerLogo}> 
       <div className={style.links}>
-        <button>
+        <button className={style.btn}>
           <Link to="/home">Home</Link>
         </button>
 
-        <button>
+        <button className={style.btn}>
           <Link to="/about">About</Link>
         </button>
       </div>
+      </div>
+
 
       <div>
         <SearchBar onSearch={onSearch} random={random} />

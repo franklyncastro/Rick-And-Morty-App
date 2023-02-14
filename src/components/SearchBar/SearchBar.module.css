@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    
 }
 
 .input {
@@ -69,6 +70,9 @@
     right: 0;
    }
 
+    a{
+        color: #fff;
+    }
 
    @media (max-width: 600px) {
     .container{
