@@ -24,7 +24,7 @@ function App() {
       navigate("/home");
       alert('Bienvenido a la App de Rick And Morty')
     } else {
-      alert("No tienes permisos para acceder");
+      alert("Este usuario no tienes permisos para acceder");
     }
   };
 
