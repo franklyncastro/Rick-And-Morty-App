@@ -1,14 +1,18 @@
 import "./App.css";
-import { About } from "./components/About";
-import Cards from "./components/Cards.jsx";
-import Nav from "./components/Nav.jsx";
 import { useState } from "react";
-import {Routes, Route} from "react-router-dom"
-import { Detail } from "./components/Detail";
+import { About } from "./components/About/About";
+import Cards from "./components/Cards/Cards";
+import Nav from "./components/Nav/Nav";
+import {Routes, Route, useLocation} from "react-router-dom"
+import { Detail } from "./components/Details/Detail";
+import {Error} from './components/Error/Error'
+import Form from "./components/Form/Form";
 // import characters, { Rick } from './data.js'
 
 function App() {
   const  [characters, setCharacters]  = useState([]);
+  const location = useLocation();
+  
 
   function onSearch(character) {
     fetch(`https://rickandmortyapi.com/api/character/${character}`)
@@ -36,15 +40,17 @@ function App() {
 
   return (
     <div className="App">
-      <div>
+      {location.pathname === '/' ? <Form/> : <Nav onSearch={onSearch} random={random} />}
+      {/* <div>
         <Nav onSearch={onSearch} random={random} />
-      </div>
+      </div> */}
 
       <div>
       <Routes>
-        <Route  path="/" element={ <Cards characters={characters} onClose={onClose} />}/>
+        <Route  path="/home" element={ <Cards characters={characters} onClose={onClose} />}/>
         <Route  path="/about" element={<About/>}/>
         <Route  path='/detail/:id' element={<Detail/>}/>
+        <Route path="/:error" element={<Error/>} />
       </Routes>
       </div>
     </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import SearchBar from "./SearchBar";
+import SearchBar from "../SearchBar/SearchBar";
 import style from "./Nav.module.css";
 import { Link } from "react-router-dom";
 
@@ -12,7 +12,7 @@ export default function Nav({ onSearch, random }) {
 
       <div className={style.links}>
         <button>
-          <Link to="/">Home</Link>
+          <Link to="/home">Home</Link>
         </button>
 
         <button>

@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    background-color: #1b1b1b;
+    flex-wrap: wrap;
+    min-width: 400px;
+}
+
+.textoUps{
+    font-size: 50px;
+    color: #fff;
+}
+.texto{
+    color: #fff;
+    font-size: 30px;
+    max-width: 900px;
+    
+}
+
+.link{
+    text-decoration: underline;
+}
+
+.imgError{
+    width: 500px;
+    border-bottom: 1px solid #dddddd6c;
+}
