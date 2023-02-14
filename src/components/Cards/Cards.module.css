@@ -13,3 +13,9 @@ a{
 Link{
     color: red;
 }
+
+@media (max-width: 950px) {
+    .titloH2{
+        margin-top: 300px;
+    }
+}

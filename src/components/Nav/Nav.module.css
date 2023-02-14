@@ -1,5 +1,5 @@
 .container{
-    box-shadow: 2px 5px 8px #9FC131, 2px -3px 8px #DBF227;
+    box-shadow: 2px 5px 8px #c131bcb0, 2px -3px 8px #790b7c;
     width: 100%;
     padding: 10px;
     background-color: #042940;
@@ -8,6 +8,8 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    position: fixed;
+    z-index: 1;
 }
 
 
@@ -15,7 +17,7 @@
     /* border: solid 1px #DBF227; */
     color: #fff;
     /* box-shadow: 2px 5px 8px #9FC131, 2px -3px 8px #DBF227; */
-    padding: 10px;
+    /* padding: 5px; */
     cursor: pointer;
     transition: .7s;
     display: flex;
