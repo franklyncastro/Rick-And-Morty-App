@@ -7,13 +7,7 @@ export const About = () => {
     <div className={style.container}>
       <h1>About me:</h1>
       <div className={style.containerP}>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
-          veritatis consequuntur tempore soluta quas ab necessitatibus corporis
-          nobis, nisi debitis possimus quis, quos harum accusantium inventore,
-          iste velit esse quibusdam.
-        </p>
-
+        <h1>Franklyn Castro</h1>
         <p>
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae
           veritatis consequuntur tempore soluta quas ab necessitatibus corporis

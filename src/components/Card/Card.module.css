@@ -42,14 +42,15 @@
 .nameText{
      font-family: 'Russo One', sans-serif;
      border: solid 1px #005C53;
+     font-size: 18px;
 }
 
 
 .containerImg img{
-    border-radius: 50%;
+    border-radius: 15%;
     cursor: pointer;
     width: 200px;
-    
+    overflow: hidden;
 }
 
 .containerText{
