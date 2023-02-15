@@ -58,6 +58,13 @@
     justify-content: space-between;
     margin-top: 10px;
     cursor: pointer;
+    padding: 10px;
+}
+.containerText:hover{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
 .btnContainer{

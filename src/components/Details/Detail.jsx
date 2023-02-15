@@ -1,7 +1,8 @@
 import React from "react";
 import style from "./Detail.module.css";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
+
 
 export const Detail = () => {
   const [character, setCharacter] = useState([]);
@@ -53,6 +54,8 @@ export const Detail = () => {
             <img src={character.image} alt="img not found" className={style.image}/>
           </div>
         </div>
+
+          <Link to='/home' className={style.btn}>Back</Link>
       
     </div>
   );

@@ -55,6 +55,11 @@ strong{
     
 }
 
+.btn{
+    font-size: 1.6em;
+    text-decoration: underline;
+}
+
 @media (max-width: 950px) {
     .titloH2{
         margin-top: 300px;
