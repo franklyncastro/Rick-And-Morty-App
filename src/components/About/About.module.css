@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-    max-width: 900px;
+    max-width: 400px;
     margin: 0 auto;
     box-shadow: 2px 5px 8px #9FC131, 2px -3px 8px #DBF227;
     background-color: #ddd;
@@ -17,4 +17,37 @@ p{
     font-size: 1.7rem;
     text-align: left;
     color: #000;
+}
+
+.imagen{
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.containerIcon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 5px;
+}
+.icon{
+    font-size: 2.5em;
+    color: #000;
+}
+
+.g:hover{
+    color: #40088d;
+    font-weight: bold;
+}
+
+.l:hover{
+    color: #0808e6;
+    font-weight: bold;
+}
+
+.w:hover{
+    color: #08be17;
+    font-weight: bold;
 }

@@ -20,16 +20,26 @@ function App() {
 
   const login = (userData) => {
     if (userData.username === username && userData.password === password) {
+      // con este trozo de codigo evito que me regrese al login al momento de actualizar la pagina
+      const token = "my-auth-token";
+      localStorage.setItem("authToken", token);
+
       setAccess(true);
       navigate("/home");
-      alert('Bienvenido a la App de Rick And Morty')
+      alert("Bienvenido a la App de Rick And Morty");
     } else {
-      alert("Este usuario no tienes permisos para acceder");
+      alert("Usuario o contraceña incorrecta");
     }
   };
 
   useEffect(() => {
-    !access && navigate("/");
+    const authToken = localStorage.getItem('authToken');
+    if (authToken) {
+      setAccess(true);
+    } else {
+      setAccess(false);
+      navigate('/');
+    }
   }, [access]);
 
   function onSearch(character) {
