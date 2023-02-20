@@ -2,13 +2,9 @@ import { Link } from "react-router-dom";
 import style from "./Card.module.css";
 import React from "react";
 
-export default function Card({ image, name, species, gender, onClose, id}) {
+export default function Card({ image, name, species, gender, onClose, id }) {
   return (
     <div className={style.container}>
-      
-
-      
-      
       <div className={style.containerCard}>
         <div className={style.btnContainer}>
           {/* Boton Delete */}
@@ -37,11 +33,11 @@ export default function Card({ image, name, species, gender, onClose, id}) {
 
           {/* Boton Delete */}
         </div>
-        <Link to={`/detail/${id}`}> 
+        <Link to={`/detail/${id}`}>
           <h2 className={style.textInfo}>Detalle</h2>
         </Link>
         <dir className={style.containerImg}>
-            <img src={image} alt="img not found" />
+          <img src={image} alt="img not found" />
         </dir>
         <h2 className={style.nameText}>{name}</h2>
         <div className={style.containerText}>
@@ -49,7 +45,6 @@ export default function Card({ image, name, species, gender, onClose, id}) {
           <h2 className={style.textInfo}>{gender}</h2>
         </div>
       </div>
-      
     </div>
   );
 }
