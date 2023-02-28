@@ -1,12 +1,35 @@
 import { Link } from "react-router-dom";
 import style from "./Card.module.css";
 import React from "react";
+import { ADD_FAVORITE, DELETE_FAVORITE } from "../../redux/action-types";
+import { useDispatch } from "react-redux";
+import { useState } from "react";
+import { addFavorite, deleteFavorite } from "../../redux/action";
 
 export default function Card({ image, name, species, gender, onClose, id }) {
+  const dispatch = useDispatch();
+  const [isFav, setIsFav] = useState(false);
+  const handleFavorite = () => {
+    if (isFav) {
+      setIsFav(false);
+      dispatch(deleteFavorite(id));
+    } else {
+      setIsFav(true);
+      dispatch(addFavorite({ image, name, species, gender, onClose, id }));
+    }
+  };
+
   return (
     <div className={style.container}>
       <div className={style.containerCard}>
         <div className={style.btnContainer}>
+        <div>
+          {isFav ? (
+            <button className={style.fav} onClick={handleFavorite}>❤️</button>
+          ) : (
+            <button className={style.fav} onClick={handleFavorite}>🤍</button>
+          )}
+        </div>
           {/* Boton Delete */}
 
           <button onClick={onClose} className={style.btnX}>

@@ -7,6 +7,7 @@ import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
 import { Detail } from "./components/Details/Detail";
 import { Error } from "./components/Error/Error";
 import Form from "./components/Form/Form";
+import { Favorite } from "./components/Favorite/Favorite";
 // import characters, { Rick } from './data.js'
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
   const [access, setAccess] = useState(false);
 
   const username = "fadmin@dev.com";
-  const password = "1";
+  const password = "Developer";
 
   const login = (userData) => {
     if (userData.username === username && userData.password === password) {
@@ -83,6 +84,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/detail/:id" element={<Detail />} />
           <Route path="/:error" element={<Error />} />
+          <Route path="/favorite" element={<Favorite/>} />
         </Routes>
       </div>
     </div>

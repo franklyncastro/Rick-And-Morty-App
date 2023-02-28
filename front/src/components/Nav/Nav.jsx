@@ -18,12 +18,15 @@ export default function Nav({ onSearch, random }) {
         <div className={style.links}>
           <button className={style.btn}>
             <Link to="/home">
-              <i class="fa-solid fa-house"></i> Home
+              <i class="fa-solid fa-house"></i> Inicio
             </Link>
           </button>
 
           <button className={style.btn}>
-            <Link to="/about"><i class="fa-regular fa-address-card"></i> About</Link>
+            <Link to="/about"><i class="fa-regular fa-address-card"></i> Sobre mi</Link>
+          </button>
+          <button className={style.btn}>
+            <Link to="/favorite"><i class="fas fa-heart"></i> Favoritos</Link>
           </button>
         </div>
       </div>
