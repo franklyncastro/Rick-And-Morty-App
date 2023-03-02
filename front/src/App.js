@@ -41,7 +41,7 @@ function App() {
       setAccess(false);
       navigate('/');
     }
-  }, [access]);
+  }, []);
 
   function onSearch(character) {
     fetch(`https://rickandmortyapi.com/api/character/${character}`)
