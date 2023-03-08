@@ -4,7 +4,7 @@
     padding: 20px;
     max-width: 400px;
     margin: 0 auto;
-    box-shadow: 2px 5px 8px #9FC131, 2px -3px 8px #DBF227;
+    box-shadow: 2px 5px 8px #df08bb, 2px -3px 8px #DBF227;
     background-color: #ddd;
     gap: 15px;
     opacity: 0.8;
@@ -22,6 +22,13 @@ p{
     width: 300px;
     margin: 0 auto;
     border-radius: 10px;
+    transition: .7s;
+    
+}
+
+.imagen:hover{
+    transform: scale(1.1);
+   
 }
 
 .containerIcon{
@@ -39,16 +46,22 @@ p{
 .g:hover{
     color: #40088d;
     font-weight: bold;
+    transform: scale(1.3);
+}
+.l,.g,.w{
+    transition: 1s;
 }
 
 .l:hover{
     color: #0808e6;
     font-weight: bold;
+    transform: scale(1.3);
 }
 
 .w:hover{
     color: #08be17;
     font-weight: bold;
+    transform: scale(1.3);
 }
 
 

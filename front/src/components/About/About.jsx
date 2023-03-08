@@ -15,7 +15,7 @@ export const About = () => {
 
         <p>
           "Soy estudiante en Henry y en esta aplicación utilicé todo lo
-          aprendido durante el Módulo 2."
+          aprendido en el Bootcamp."
         </p>
 
         <div className={style.containerIcon}>
