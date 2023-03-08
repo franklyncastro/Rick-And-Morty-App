@@ -1,116 +1,15 @@
-.allContainer{
-    display: block;
-    
-}
 
 .container{
-    height: 70vh;
-    /* height: 65vh; */
+    /* height: 60vh; */
     display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 
-
-.containerCard{
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    width: 270px;
-    padding: 18px;
-    border-radius: 5px;
-    background-color: #daf227de;
-    transition: all .4s;
-    box-shadow: 0px 0px 30px 1px rgba(0, 181, 85, 0.3);
-  
-}
-
-.containerCard:hover{
-    box-shadow: 10px 15px 18px #080606, -10px -13px 18px #080606;
-    transition: all .4s;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -ms-transition: all .4s;
-    -o-transition: all .4s;
-}
-
-.containerCard:hover{
-    transform: scale(0.98);
-    border-radius: 20px;
-}
-
-
-
-.nameText{
-     font-family: 'Russo One', sans-serif;
-     border: solid 1px #005C53;
-     font-size: 18px;
-}
-
-
-.containerImg img{
-    border-radius: 15%;
-    cursor: pointer;
-    width: 200px;
-    overflow: hidden;
-}
-
-.containerText{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    cursor: pointer;
-    padding: 10px;
-}
-.containerText:hover{
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    cursor: pointer;
-}
-
-/* Estilos del texto informacion */
-
-.textInfo {
-    font-size: 14px;
-    color: #1b1b1b;
-    cursor: pointer;
-    position: relative;
-    background: none;
-    text-transform: uppercase;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: color;
-    padding: 5px;
-  }
-
-  
-  .textInfo:focus,
-  .textInfo:hover {
-    color: #000;
-  }
-  
-  .textInfo:focus:after,
-  .textInfo:hover:after {
-    width: 100%;
-    left: 0%;
-  }
-  
-  .textInfo:after {
-    content: "";
-    pointer-events: none;
-    bottom: -2px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: #000;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-    transition-property: width, left;
-  }
 
 
   @media (max-width: 950px) {
