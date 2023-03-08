@@ -10,6 +10,14 @@
     flex-direction: row-reverse;
 }
 
+.containerH2{
+    box-shadow: 2px 5px 8px #b800e6, 2px -3px 8px #DBF227;
+    width: 350px;
+    margin: 0 auto;
+    background-color: #1b1b1b;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 .titloH2{
     margin-top: 30px;
