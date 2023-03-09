@@ -1,11 +1,12 @@
-.container{
+.containerError{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 5%;
-    background-color: #1b1b1b;
+    background-color: #72117c94;
     flex-wrap: wrap;
     min-width: 400px;
+    padding: 23vh;
+    opacity: .9;
 }
 
 .textoUps{

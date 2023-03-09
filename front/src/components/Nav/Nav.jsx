@@ -14,20 +14,19 @@ export default function Nav({ onSearch, random }) {
   return (
     <div className={style.container}>
       <div className={style.containerLogo}>
-        <img src={img} alt="imagen not found" className={style.photo}/>
+        <img src={img} alt="imagen not found" className={style.photo} />
         <div className={style.links}>
-          <button className={style.btn}>
-            <Link to="/home">
-              <i class="fa-solid fa-house"></i> Inicio
-            </Link>
-          </button>
+          <Link to="/home" className={style.btn}>
+            <i class="fa-solid fa-house"></i> Inicio
+          </Link>
 
-          <button className={style.btn}>
-            <Link to="/about"><i class="fa-regular fa-address-card"></i> Sobre mi</Link>
-          </button>
-          <button className={style.btn}>
-            <Link to="/favorite"><i class="fas fa-heart"></i> Favoritos</Link>
-          </button>
+          <Link to="/about" className={style.btn}>
+            <i class="fa-regular fa-address-card"></i> Sobre mi
+          </Link>
+
+          <Link to="/favorite" className={style.btn}>
+            <i class="fas fa-heart"></i> Favoritos
+          </Link>
         </div>
       </div>
 

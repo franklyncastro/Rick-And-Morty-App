@@ -5,7 +5,7 @@ import imagen from '../../img/404.png';
 
 export const Error = () => {
   return (
-    <div className={style.container}>
+    <div className={style.containerError}>
       <img src={imagen} alt='img not found' className={style.imgError}/>
       <div className={style.containerGeneral}>
 
@@ -16,7 +16,7 @@ export const Error = () => {
         eliminada."
       </p>
       <div className={style.containerLink}>
-        <Link to="/" className={style.link}>Regresar al inicio</Link>
+        <Link to="/home" className={style.link}>Regresar al inicio</Link>
       </div>
       </div>
     </div>

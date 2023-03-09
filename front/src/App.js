@@ -74,6 +74,7 @@ function App() {
       ) : (
         <Nav onSearch={onSearch} random={random} />
       )}
+      
 
       <div>
         <Routes>
@@ -81,9 +82,9 @@ function App() {
             path="/home"
             element={<Cards characters={characters} onClose={onClose} />}
           />
+          <Route path="/:error" element={<Error />} />
           <Route path="/about" element={<About />} />
           <Route path="/detail/:id" element={<Detail />} />
-          <Route path="/:error" element={<Error />} />
           <Route path="/favorite" element={<Favorite/>} />
         </Routes>
       </div>
