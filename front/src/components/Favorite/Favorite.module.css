@@ -1,34 +1,21 @@
+.h1Fav{
+  margin-top: 130px;
+  color: aliceblue;
+  font-size: 3em;
+}
 
 .container{
-    /* height: 60vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerCards{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
     gap: 10px;
     flex-wrap: wrap;
-}
-
-
-
-
-  @media (max-width: 950px) {
-    .container{
-      margin-top: 300px;
-    }
-}
-  @media (max-width: 700px) {
-    .containerText{
-      display: none;
-    }
-
-    .btnX{
-      width: 40px;
-      height: 40px;
-    }
-
-    .iconWrapper{
-      width: 40px;
-      height: 40px;
-    }
 }
