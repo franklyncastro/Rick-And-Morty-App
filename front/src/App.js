@@ -41,9 +41,9 @@ function App() {
       setAccess(false);
       navigate('/');
     }
-  }, []);
+  }, [access]);
 
-  function onSearch(character) {
+  const onSearch=(character)=> {
     fetch(`https://rickandmortyapi.com/api/character/${character}`)
       .then((response) => response.json())
       .then((data) => {
