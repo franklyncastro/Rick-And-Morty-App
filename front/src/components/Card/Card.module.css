@@ -233,3 +233,23 @@
       height: 40px;
     }
 }
+  @media (max-width:409px) {
+    .container{
+      margin-top: 370px;
+    }
+}
+  @media (max-width: 700px) {
+    .containerText{
+      display: none;
+    }
+
+    .btnX{
+      width: 40px;
+      height: 40px;
+    }
+
+    .iconWrapper{
+      width: 40px;
+      height: 40px;
+    }
+}
