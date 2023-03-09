@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Up from '../Up/Up';
 import Card from './Card'
 
 
@@ -12,6 +13,7 @@ const Home = () => {
   return (
     <div>
       <Card characters={characters} onClose={onClose}/>
+      <Up/>
     </div>
   )
 }

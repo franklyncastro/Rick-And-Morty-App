@@ -6,7 +6,10 @@ import { Link } from "react-router-dom";
 export const About = () => {
   return (
     <div className={style.container}>
-      <h1>About me:</h1>
+      <div className={style.titleContainer}>
+      <h1 className={style.h1About}>Sobre mi</h1>
+      </div>
+
       <div className={style.containerP}>
         <img src={img} alt="imagen not found" className={style.imagen} />
 
@@ -40,6 +43,7 @@ export const About = () => {
           >
             <i class="fa-brands fa-whatsapp"></i>
           </Link>
+
         </div>
       </div>
     </div>

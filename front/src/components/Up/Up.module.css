@@ -1,0 +1,19 @@
+.containerUp{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.containerUpBtn{
+height: 85vh;
+display: flex;
+align-items: flex-end;
+}
+
+.Up{
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    color: white;
+    background-color: #ff0000;
+    border: none;
+}

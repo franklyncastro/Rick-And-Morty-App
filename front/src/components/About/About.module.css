@@ -8,8 +8,25 @@
     background-color: #ddd;
     gap: 15px;
     opacity: 0.8;
-    margin-top: 90px;
+    margin-top: 90px;}
 
+.titleContainer{
+    display: flex;
+    width: 100%;
+}
+
+.h1About{
+    /* margin-top: 20px; */
+    color: aliceblue;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    box-shadow: 
+    rgba(3, 31, 156, 0.3) 0px 9px 28px, 
+    rgba(49, 3, 66, 0.22) 0px 12px 12px;
+    padding: 5px;
+    border-radius: 5px;
+    margin:0 auto;
+    width: 240px;
 }
 
 p{

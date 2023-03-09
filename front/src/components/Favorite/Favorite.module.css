@@ -1,7 +1,14 @@
 .h1Fav{
-  margin-top: 130px;
+  /* margin-top: 115px; */
   color: aliceblue;
-  font-size: 3em;
+  font-size: 2.5em;
+  box-shadow: 
+  rgba(3, 31, 156, 0.3) 0px 9px 28px, 
+  rgba(49, 3, 66, 0.22) 0px 12px 12px;
+  width: 240px;
+  padding: 5px;
+  border-radius: 5px;
+  text-transform: uppercase;
 }
 
 .container{

@@ -8,6 +8,7 @@ import { Detail } from "./components/Details/Detail";
 import { Error } from "./components/Error/Error";
 import Form from "./components/Form/Form";
 import { Favorite } from "./components/Favorite/Favorite";
+import Up from "./components/Up/Up";
 // import characters, { Rick } from './data.js'
 
 function App() {
@@ -34,16 +35,16 @@ function App() {
   };
 
   useEffect(() => {
-    const authToken = localStorage.getItem('authToken');
+    const authToken = localStorage.getItem("authToken");
     if (authToken) {
       setAccess(true);
     } else {
       setAccess(false);
-      navigate('/');
+      navigate("/");
     }
   }, [access]);
 
-  const onSearch=(character)=> {
+  const onSearch = (character) => {
     fetch(`https://rickandmortyapi.com/api/character/${character}`)
       .then((response) => response.json())
       .then((data) => {
@@ -55,7 +56,7 @@ function App() {
           alert("No hay personajes con ese ID.");
         }
       });
-  }
+  };
 
   function random() {
     let randomId = Math.floor(Math.random() * 826);
@@ -74,7 +75,6 @@ function App() {
       ) : (
         <Nav onSearch={onSearch} random={random} />
       )}
-      
 
       <div>
         <Routes>
@@ -85,7 +85,7 @@ function App() {
           <Route path="/:error" element={<Error />} />
           <Route path="/about" element={<About />} />
           <Route path="/detail/:id" element={<Detail />} />
-          <Route path="/favorite" element={<Favorite/>} />
+          <Route path="/favorite" element={<Favorite />} />
         </Routes>
       </div>
     </div>
