@@ -14,18 +14,12 @@
 
 
 .containerLogo{
-    color: #fff;
     cursor: pointer;
     transition: .7s;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
 }
 
-.containerLogo:hover{
-    transition: .7s;
-    color: #DBF227;
-    
-}
 
 .serachContainer{
     display: flex;

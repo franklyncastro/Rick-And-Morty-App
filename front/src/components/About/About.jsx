@@ -7,16 +7,15 @@ export const About = () => {
   return (
     <div className={style.container}>
       <div className={style.titleContainer}>
-      <h1 className={style.h1About}>Sobre mi</h1>
       </div>
 
       <div className={style.containerP}>
         <img src={img} alt="imagen not found" className={style.imagen} />
 
-        <h1>Hi I'm Franklyn Castro</h1>
-        <h2 className={style.h2}>FullStack Developer</h2>
+        <h1 className="animate__animated animate__fadeInDown">Hi I'm Franklyn Castro</h1>
+        <h2 className='h2 animate__animated animate__rubberBand animate__delay-1s'>FullStack Developer</h2>
 
-        <p>
+        <p className="animate__animated animate__swing animate__delay-2s">
           "Soy estudiante en Henry y en esta aplicación utilicé todo lo
           aprendido en el Bootcamp."
         </p>

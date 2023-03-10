@@ -29,7 +29,7 @@ export default function SearchBar({ onSearch, random }) {
         </button>
         <button className={style.btn} onClick={random}>
           <Link to="/home" className={style.link}>
-          <i class="fa-solid fa-shuffle"></i>
+            <i class="fa-solid fa-shuffle"></i>
           </Link>
         </button>
       </div>

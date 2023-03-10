@@ -15,6 +15,7 @@ function App() {
   const navigate = useNavigate();
   const [characters, setCharacters] = useState([]);
   const [access, setAccess] = useState(false);
+  const [alertMessage, setAlert] = useState("");
 
   const username = "fadmin@dev.com";
   const password = "Developer2023";
@@ -48,11 +49,14 @@ function App() {
       .then((response) => response.json())
       .then((data) => {
         if (data.name) {
-          characters.find((element) => element.id === data.id) === undefined
+          characters.find((e) => e.id === data.id) === undefined
             ? setCharacters((characters) => [...characters, data])
-            : alert("Personaje repetido, prueba otro ID.");
+            : setAlert("Personaje o id repetido");
+              setTimeout(() => setAlert(""), 3000);
         } else {
-          alert("No hay personajes con ese ID.");
+          // alerta que se muestra por 2 segundos usando useEffect
+          setAlert("No hay personajes con ese ID");
+          setTimeout(() => setAlert(""), 2000);
         }
       });
   };
@@ -64,7 +68,7 @@ function App() {
   }
 
   const onClose = (id) => {
-    setCharacters(characters.filter((element) => element.id !== id));
+    setCharacters(characters.filter((e) => e.id !== id));
   };
 
   return (
@@ -74,6 +78,13 @@ function App() {
       ) : (
         <Nav onSearch={onSearch} random={random} />
       )}
+      <div className="alertContainer">
+        {alertMessage && (
+          <div className="alert animate__animated animate__headShake">
+            <span>{alertMessage}</span>
+          </div>
+        )}
+      </div>
 
       <div>
         <Routes>
