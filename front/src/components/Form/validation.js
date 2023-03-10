@@ -5,7 +5,7 @@ export const validation = (userData) => {
   let passwordRegex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{5,}$/
 
   if(!emailRegex.test(userData.username)){
-    error.username = 'Verifica el email'
+    error.username = 'Email incorrecto'
   }
   if(!userData.username){
     error.username = 'El campo email no puede estar vacio'

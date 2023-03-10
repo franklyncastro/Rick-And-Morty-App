@@ -78,9 +78,11 @@ const Form = ({ login }) => {
             </button>
           </div>
         </div>
+      </form>
+      <div className={style.errorContainer}>
         {errors.username && <p className={style.warning2}>{errors.username}</p>}
         {errors.password && <p className={style.warning2}>{errors.password}</p>}
-      </form>
+      </div>
     </div>
   );
 };

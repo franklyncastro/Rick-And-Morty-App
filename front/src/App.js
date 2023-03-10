@@ -8,8 +8,7 @@ import { Detail } from "./components/Details/Detail";
 import { Error } from "./components/Error/Error";
 import Form from "./components/Form/Form";
 import { Favorite } from "./components/Favorite/Favorite";
-import Up from "./components/Up/Up";
-// import characters, { Rick } from './data.js'
+// import Up from "./components/Up/Up";
 
 function App() {
   const location = useLocation();

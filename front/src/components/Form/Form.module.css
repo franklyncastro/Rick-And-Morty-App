@@ -104,7 +104,7 @@ color: greenyellow;
   }
 
   /* Inputs */
-  /* From uiverse.io by @alexruix */
+  
 .input {
     line-height: 28px;
     border: 2px solid transparent;
@@ -154,18 +154,31 @@ color: greenyellow;
                 inset -4px -4px 12px #ffffff;
    }
    
+    .errorContainer{
+      display: flex;
+      gap: 10px;
+      margin: 10px;
+      flex-direction: column;
+    }
+
    .warning{
     color: red;
-    font-size: 18px;
+    font-size: 22px;
     position: relative;
     left: 40px;
    }
+
    .warning2{
     color: red;
-    font-size: 12px;
+    font-size: 16px;
     background-color: #e8e8e8;
     text-align: center;
-   }
+    border-radius: 5px;
+    padding: 5px;
+    font-weight: 500;
+    opacity: .9;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
    .containerInputs{
     display: flex;
