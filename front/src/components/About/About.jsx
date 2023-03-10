@@ -26,21 +26,21 @@ export const About = () => {
             className={`${style.icon} ${style.g}`}
             target="_blank"
           >
-            <i class="fa-brands fa-github" target="_blank"></i>
+            <i class="fa-brands fa-github animate__animated animate__shakeY animate__delay-3s" target="_blank"></i>
           </Link>
           <Link
             to="https://www.linkedin.com/in/franklyn-yawerlyn-castro-dev/"
             className={`${style.icon} ${style.l}`}
             target="_blank"
           >
-            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-linkedin-in animate__animated animate__shakeY animate__delay-4s"></i>
           </Link>
           <Link
             to="https://bit.ly/3dUQHku"
             className={`${style.icon} ${style.w}`}
             target="_blank"
           >
-            <i class="fa-brands fa-whatsapp"></i>
+            <i class="fa-brands fa-whatsapp animate__animated animate__shakeY animate__delay-5s"></i>
           </Link>
 
         </div>
