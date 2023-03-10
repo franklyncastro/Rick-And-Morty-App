@@ -4,11 +4,12 @@
     padding: 20px;
     max-width: 400px;
     margin: 0 auto;
-    box-shadow: 2px 5px 8px #df08bb, 2px -3px 8px #DBF227;
-    background-color: #ddd;
+    box-shadow: 2px 5px 38px #df08bb, 2px -3px 48px #DBF227;
+    background-color: #dddddd;
     gap: 15px;
-    opacity: 0.9;
-    margin-top: 90px;}
+    margin-top: 90px;
+    border-radius: 10px;
+}
 
 .titleContainer{
     display: flex;
