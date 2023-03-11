@@ -51,7 +51,7 @@ function App() {
         if (data.name) {
           characters.find((e) => e.id === data.id) === undefined
             ? setCharacters((characters) => [...characters, data])
-            : setAlert("Personaje o id repetido");
+            : setAlert("Personaje repetido");
               setTimeout(() => setAlert(""), 3000);
         } else {
           // alerta que se muestra por 2 segundos usando useEffect

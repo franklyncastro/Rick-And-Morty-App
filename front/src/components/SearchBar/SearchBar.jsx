@@ -11,6 +11,8 @@ export default function SearchBar({ onSearch, random }) {
     setCharacter(value);
   };
 
+ 
+
   return (
     <div className={style.container}>
       <input
