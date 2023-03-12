@@ -15,9 +15,11 @@ export const Favorite = () => {
           <h1 className={style.h1Fav}>Favoritos</h1>
         </div>
         <div className={style.containerCards}>
+          {/* Con esta  */}
           {myFavorites.length === 0 ? (
             <p
               style={{ color: "violet", marginTop: "150px", fontSize: "24px" }}
+              className="animate__animated animate__backInDown"
             >
               ¡Agrega un favorito!
             </p>

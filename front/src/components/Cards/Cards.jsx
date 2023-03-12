@@ -7,8 +7,18 @@ export default function Cards({ characters, onClose }) {
   return (
     <div className={style.container}>
       {characters.length === 0 ? (
-        <p style={{ color: "violet", marginTop: "150px", fontSize: "24px" }}>
-          ¡Agrega un personaje!
+        <p
+          style={{
+            color: "violet",
+            marginTop: "150px",
+            fontSize: "26px",
+            textAlign: "center",
+          }}
+          className="animate__animated animate__backInDown"
+        >
+          ¡Agrega un personaje! <br />
+          Puedes agregar un personaje buscandolo por su id <br />
+          Tambien lo puedes hacer generando un personaje de forma aleatoria
         </p>
       ) : (
         characters.map((character) => (
