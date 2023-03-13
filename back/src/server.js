@@ -1,15 +1,15 @@
 const express = require("express");
+const router = require("./routes/index");
 const app = express();
 const PORT = 3001;
 const morgan = require('morgan')
 const cors = require("cors");
-// const router = require("./routes");
 
 
 app.use(cors());
 app.use(morgan('dev'));
 app.use(express.json());
-// app.use('/rickandmorty', router)
+app.use('/rickandmorty', router)
 
 //? Nuevo servidor creado con express
 
