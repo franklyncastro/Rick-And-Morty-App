@@ -9,9 +9,15 @@
     justify-content: space-between;
     flex-wrap: wrap;
     /* position: fixed; */
+    transition: all 1s ease;
     z-index: 1;
 }
 
+.container:hover{
+    box-shadow: 2px 15px 18px #c131bcb0, 2px -5px 8px #790b7c;
+    transition: all 1s ease;
+    
+}
 
 .containerLogo{
     cursor: pointer;
