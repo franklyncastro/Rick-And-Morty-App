@@ -1,7 +1,8 @@
 const axios = require("axios");
 const URL = "https://rickandmortyapi.com/api/character";
 
-const getCharByDetail = (res, id) => {
+const getCharByDetail = (req, res) => {
+  const { id } = req.params;
   axios(`${URL}/${id}`)
     .then((res) => res.data)
     .then((data) => {
@@ -16,11 +17,11 @@ const getCharByDetail = (res, id) => {
       };
       res.status(200).json(character);
     })
-    .catch((err) => {
-      res.status(500).json({ err: err.message });
+    .catch((error) => {
+      res.status(500).json({ error: error.message });
     });
 };
 
 module.exports = {
-  getCharByDetail
+  getCharByDetail,
 };
