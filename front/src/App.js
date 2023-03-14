@@ -15,8 +15,10 @@ function App() {
   const navigate = useNavigate();
   const [characters, setCharacters] = useState([]);
   const [access, setAccess] = useState(false);
+  // Alert personalizado
   const [alertMessage, setAlert] = useState("");
 
+  // user and password Login
   const username = "fadmin@dev.com";
   const password = "Developer2023";
 
