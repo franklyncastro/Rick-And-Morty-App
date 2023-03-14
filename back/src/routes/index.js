@@ -14,7 +14,7 @@ router.get('/fav', (req, res) => {
 
 router.post('/fav', (req, res) => {
     const { id, name, species, image, gender} = req.body;
-    // console.log(req.body);
+    console.log(req.body);
     if(!id || !name || !species || !image || !gender) {
         return res.status(404).send('Faltan datos')
     }
