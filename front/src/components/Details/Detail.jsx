@@ -9,7 +9,7 @@ export const Detail = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    fetch(`https://rickandmortyapi.com/api/character/${id}`)
+    fetch(`https://localhost:3001/rickandmorty/${id}`)
       .then((response) => response.json())
       .then((char) => {
         if (char.name) {
