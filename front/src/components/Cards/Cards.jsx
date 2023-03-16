@@ -10,14 +10,14 @@ export default function Cards({ characters, onClose }) {
         <p
           style={{
             color: "violet",
-            marginTop: "150px",
+            marginTop: "300px",
             fontSize: "26px",
             textAlign: "center",
           }}
-          className="animate__animated animate__backInDown"
+          className="animate__animated animate__backInDown pText"
         >
           ¡Agrega un personaje! <br />
-          Puedes agregar un personaje buscandolo por su id <br />
+          Puedes agregar un personaje buscando su id por el momento <br />
           Tambien lo puedes hacer generando un personaje de forma aleatoria
         </p>
       ) : (

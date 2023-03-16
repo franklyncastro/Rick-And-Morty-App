@@ -31,9 +31,9 @@ body{
   
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
    body{
-      background-image: url('./img/bodyImg.jpg');
+      background-image: url('./img/rick4.png');
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -42,7 +42,7 @@ body{
       
       
    }
-}
+} */
 
 .alertContainer{
    width: auto;

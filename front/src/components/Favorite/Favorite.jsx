@@ -18,7 +18,7 @@ export const Favorite = () => {
           {/* Con esta  */}
           {myFavorites.length === 0 ? (
             <p
-              style={{ color: "violet", marginTop: "150px", fontSize: "24px" }}
+              style={{ color: "violet", marginTop: "300px", fontSize: "24px" }}
               className="animate__animated animate__backInDown"
             >
               ¡Agrega un favorito!
