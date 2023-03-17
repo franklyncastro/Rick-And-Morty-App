@@ -7,6 +7,7 @@ async function getCharByDetail(req, res) {
     const { id } = req.params;
     const response = await axios(`${URL}/${id}`);
     const data = response.data;
+
     const character = {
       id: data.id,
       image: data.image,
@@ -14,6 +15,7 @@ async function getCharByDetail(req, res) {
       gender: data.gender,
       species: data.species,
     };
+    res.status(200).json(character);
   } catch (error) {
     res.status(500).json({ error: error.message });
   }
@@ -22,10 +24,6 @@ async function getCharByDetail(req, res) {
 module.exports = {
   getCharByDetail,
 };
-
-
-
-
 
 //! Proceso sin Async-Await
 // const getCharByDetail = (req, res) => {
