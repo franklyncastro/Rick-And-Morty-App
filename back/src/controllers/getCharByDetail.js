@@ -10,10 +10,12 @@ async function getCharByDetail(req, res) {
 
     const character = {
       id: data.id,
+      status: data.status,
       image: data.image,
       name: data.name,
       gender: data.gender,
       species: data.species,
+      origin: data.origin,
     };
     res.status(200).json(character);
   } catch (error) {
