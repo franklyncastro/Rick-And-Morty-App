@@ -7,6 +7,12 @@ import Card from "../Card/Card";
 
 export const Favorite = () => {
   const { myFavorites } = useSelector((state) => state);
+  // console.log(myFavorites);
+  //todo => filtro para evitar que se dupliquen los favoritos
+  //! verificar, aun se duplican los favoritos...  
+  const uniqueFavorites = myFavorites.filter((character, index) => {
+    return myFavorites.indexOf(character) === index;
+  });
 
   return (
     <div>
@@ -24,7 +30,7 @@ export const Favorite = () => {
               ¡Agrega un favorito!
             </p>
           ) : (
-            myFavorites.map((character) => (
+            uniqueFavorites.map((character) => (
               <Card
                 key={character.id}
                 name={character.name}

@@ -18,6 +18,7 @@ const reducer = (state = initialState, action) => {
       const removeFav = state.myFavorites.filter(
         (char) => char.id !== action.payload
       );
+      
       return {
         ...state,
         myFavorites: removeFav,
