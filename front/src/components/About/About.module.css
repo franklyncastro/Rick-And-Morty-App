@@ -126,7 +126,7 @@ p{
     }
     .containerP{
         width: 310px;
-        margin-top: 350px;
+        margin-top: 320px;
        
     }
 
@@ -148,4 +148,35 @@ p{
     }
 
 }
+
+@media (max-width: 400px) {
+    .imagen{
+        width: 230px;
+    }
+    .containerP{
+        width: 310px;
+        margin-top: 340px;
+       
+    }
+
+    h1{
+        font-size: 1.4rem;
+    }
+
+    h2{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1.3rem;
+        text-align: left;
+        color: #000;
+    }
+    .icon{
+        font-size: 2rem;
+        color: #000;
+    }
+
+}
+
+
 

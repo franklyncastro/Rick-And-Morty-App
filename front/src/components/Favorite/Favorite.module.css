@@ -1,28 +1,234 @@
-.h1Fav{
-  /* margin-top: 115px; */
-  color: aliceblue;
-  font-size: 2.5em;
-  box-shadow: 
-  rgba(3, 31, 156, 0.3) 0px 9px 28px, 
-  rgba(49, 3, 66, 0.22) 0px 12px 12px;
-  width: 240px;
-  padding: 5px;
-  border-radius: 5px;
-  text-transform: uppercase;
-}
-
 .container{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    transition: all .9s;
+    margin-top: 30px;
+    gap: 20px;
+    flex-wrap: wrap;   
 }
 
-.containerCards{
+
+.containerCard{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 270px;
+    padding: 18px;
+    border-radius: 5px;
+    background-color: #daf227de;
+    transition: all .4s;
+    box-shadow: 0px 0px 30px 1px rgba(0, 181, 85, 0.3);
+    margin-bottom: 100px;
+}
+
+.containerCard:hover{
+    box-shadow: 10px 15px 18px #080606, -10px -13px 18px #080606;
+    transition: all .4s;
+    -webkit-transition: all .4s;
+    -moz-transition: all .4s;
+    -ms-transition: all .4s;
+    -o-transition: all .4s;
+}
+
+.containerCard:hover{
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+
+.nameText{
+     font-family: 'Russo One', sans-serif;
+     border: solid 1px #005C53;
+     font-size: 18px;
+}
+
+
+.containerImg img{
+    border-radius: 15%;
+    cursor: pointer;
+    width: 200px;
+    overflow: hidden;
+}
+
+.containerText{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+.containerText:hover{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/* Estilos Boton Delete */
+
+.btnX {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 5px .2px #00000035;
+    box-shadow: 1px 1px 5px .2px #00000035;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    transition-delay: .2s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: space-between;
+  }
+  
+  .btnX:hover {
+    width: 150px;
+    transition-delay: .2s;
+  }
+  
+  .btnX:hover > .paragraph {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition-delay: .4s;
+    transition-delay: .4s;
+  }
+  
+  .btnX:hover > .iconWrapper .icon {
+    transform: scale(1.1);
+  }
+  
+  .btnX:hover > .iconWrapper .icon path {
+    stroke: #f40b0b;
+  }
+  
+  .paragraph {
+    color: #f40b0b;
+    visibility: hidden;
+    opacity: 0;
+    font-size: 18px;
+    margin-right: 20px;
+    padding-left: 20px;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .iconWrapper {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
-    gap: 10px;
-    flex-wrap: wrap;
+  }
+  
+  .icon {
+    transform: scale(.9);
+    transition: .2s linear;
+  }
+  
+  .icon path {
+    stroke: #f40b0b;
+    stroke-width: 2px;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
+  }
+
+  /* Estilos boton favorito */
+
+  .fav{
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    -webkit-box-shadow: 1px 1px 5px .2px #00000035;
+    box-shadow: 1px 1px 5px .2px #00000035;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+/* Estilos del texto informacion */
+
+.textInfo {
+    font-size: 14px;
+    color: #1b1b1b;
+    cursor: pointer;
+    position: relative;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+    padding: 5px;
+  }
+
+  
+  .textInfo:focus,
+  .textInfo:hover {
+    color: #000;
+  }
+  
+  .textInfo:focus:after,
+  .textInfo:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .textInfo:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+ 
+  @media (max-width: 998px) {
+    .container{
+      margin: 0;
+    }
+    .containerCard{
+      margin-top: 260px;
+    }
 }
+
+  @media (max-width: 950px) {
+    .containerCard{
+      margin-top: 320px;
+    }
+}
+ 
+  @media (max-width:409px) {
+    .containerCard{
+      margin-top: 360px;
+    }
+}
+ 
