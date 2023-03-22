@@ -3,8 +3,7 @@ import style from "./Up.module.css";
 
 const Up = () => {
   return (
-  
-    <div className={style.containerUp}>
+    <div className={style.containerUpBtn}>
       <button className={style.Up} onClick={() => window.scrollTo(0, 0)}>
         Up
       </button>

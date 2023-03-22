@@ -1,56 +1,46 @@
 
 
+.containerUpBtn{
+    display: flex;
+    background-color: transparent;
+    width: 100%;
+    position: fixed;
+    justify-content: flex-end;
+    margin-top: 760px;
+    transition: 1s;
+    z-index: 999;
+    flex-wrap: wrap;
+    right: 6px;
+    height: auto;
+}
+
 .Up{
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    border: none;
-    background-color: #005C53;
-}
-
-
-
-.containerUp{
-    display: flex;
-    /* justify-content: flex-end; */
-    align-items: flex-end;
-    width: 200vh;
-    height: 87vh;
-    justify-content: flex-end;
-    /* background-color: red; */
-    position: absolute;
-    z-index: 999;
-}
-
-
-/* .containerUpBtn{
-    height: 85vh;
-    display: flex;
-    align-items: flex-end;
-} */
-
-/* .Up{
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
-    color: white;
-    background-color: #005C53;
-    border: none;
+    border: none ;
     cursor: pointer;
-    transition: 1s;
+    background-color: #005C53;
     font-size: 20px;
-} */
+    color: #fff;
+    transition: 1s;
+}
 
-/* .Up:hover{
+
+
+.Up:hover{
     box-shadow: 2px 5px 28px #9FC131, 2px -3px 28px #DBF227;
     transition: 1s;
-} */
+}
 
-
-/* @media (max-width: 980px) {
-    .Up{
-        font-size: 17px;
-        width: 40px;
-        height: 40px;
+@media (max-width: 1700px){
+    .containerUpBtn{
+        margin-top: 680px;
     }
-} */
+}
+
+@media (max-width: 998px){
+    .containerUpBtn{
+        margin-top: 780px;
+    }
+}

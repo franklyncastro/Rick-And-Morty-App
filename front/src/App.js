@@ -79,14 +79,14 @@ function App() {
         <Form login={login} />
       ) : (
         <Nav onSearch={onSearch} random={random} />
-      )}
+        )}
+        <Up/> 
       <div className="alertContainer">
         {alertMessage && (
           <div className="alert animate__animated animate__headShake">
             <span>{alertMessage}</span>
           </div>
         )}
-        {/* <Up/> */}
       </div>
 
       <div>
