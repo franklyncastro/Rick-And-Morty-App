@@ -8,7 +8,7 @@ import { Detail } from "./components/Details/Detail";
 import { Error } from "./components/Error/Error";
 import Form from "./components/Form/Form";
 import { Favorite } from "./components/Favorite/Favorite";
-// import Up from "./components/Up/Up";
+import Up from "./components/Up/Up";
 
 function App() {
   const location = useLocation();
@@ -87,6 +87,7 @@ function App() {
           </div>
         )}
       </div>
+        <Up/>
 
       <div>
         <Routes>
