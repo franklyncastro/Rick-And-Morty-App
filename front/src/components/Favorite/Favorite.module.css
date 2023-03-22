@@ -227,6 +227,9 @@
 }
  
   @media (max-width:409px) {
+    .container{
+      gap: 0;
+    }
     .containerCard{
       margin-top: 360px;
     }

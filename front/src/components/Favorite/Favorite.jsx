@@ -12,7 +12,7 @@ export const Favorite = () => {
     <div className={style.container}>
       {myFavorites.map((char) => {
         return (
-          <div className={style.container}>
+          <div >
             <div className={style.containerCard}>
               <div className={style.btnContainer}></div>
               <span className="animate__animated animate__bounce corazon"> ❤️ </span>
