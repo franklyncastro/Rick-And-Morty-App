@@ -28,9 +28,7 @@ export const Card =({ image, name, species, gender, onClose, id })=> {
     myFavorites.forEach((fav) => {
       if (fav.id === id) {
         setIsFav(true);
-      } else {
-        setIsFav(false);
-      }
+      } 
     });
   })
 

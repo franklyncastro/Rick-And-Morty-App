@@ -86,8 +86,8 @@ function App() {
             <span>{alertMessage}</span>
           </div>
         )}
+        {/* <Up/> */}
       </div>
-        <Up/>
 
       <div>
         <Routes>
