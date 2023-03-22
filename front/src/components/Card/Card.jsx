@@ -23,13 +23,15 @@ export const Card =({ image, name, species, gender, onClose, id })=> {
     }
   };
 
-  //todo => con este useEffect mantenemos marcado el personaje como favorito y viseversa. 
+
   useEffect(()=>{
-    myFavorites.forEach((fav)=> {
-      if(fav.id === id){
-        setIsFav(true)
+    myFavorites.forEach((fav) => {
+      if (fav.id === id) {
+        setIsFav(true);
+      } else {
+        setIsFav(false);
       }
-    })
+    });
   })
 
   return (
