@@ -2,11 +2,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #72117c94;
+    background-color: #110501e8;
     flex-wrap: wrap;
     min-width: 400px;
-    padding: 23vh;
-    opacity: .9;
+    margin-top: 20vh;
 }
 
 .textoUps{

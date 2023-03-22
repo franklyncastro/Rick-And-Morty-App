@@ -1,3 +1,7 @@
 .corazon{
     font-size: 30px;
 }
+
+.animate__animated.animate__bounce {
+    --animate-duration: 1s;
+  }

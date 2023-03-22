@@ -8,6 +8,7 @@ import { addFavorite, deleteFavorite } from "../../redux/action";
 import { connect } from "react-redux";
 
 
+
 export const Card =({ image, name, species, gender, onClose, id })=> {
   const dispatch = useDispatch();
   const [isFav, setIsFav] = useState(false);
@@ -33,6 +34,8 @@ export const Card =({ image, name, species, gender, onClose, id })=> {
 
   return (
     <div className={style.container}>
+      <div className="animate__animated animate__fadeInDown">
+
       <div className={style.containerCard}>
         <div className={style.btnContainer}>
           <div>
@@ -77,6 +80,7 @@ export const Card =({ image, name, species, gender, onClose, id })=> {
           <h2 className={style.textInfo}>{species}</h2>
           <h2 className={style.textInfo}>{gender}</h2>
         </div>
+      </div>
       </div>
     </div>
   );
