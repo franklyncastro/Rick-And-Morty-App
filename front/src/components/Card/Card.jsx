@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import style from "./Card.module.css";
 import React from "react";
-import { useDispatch } from "react-redux";
+//todo => useDispatch es el hook que reemplaza a ("mapDispatchToProps") 
+import { useDispatch, useSelector } from "react-redux";
 import { useState, useEffect } from "react";
 import { addFavorite, deleteFavorite } from "../../redux/action";
 import { connect } from "react-redux";
@@ -10,6 +11,7 @@ import { connect } from "react-redux";
 export const Card =({ image, name, species, gender, onClose, id })=> {
   const dispatch = useDispatch();
   const [isFav, setIsFav] = useState(false);
+  const myFavorites = useSelector(state => state.myFavorites);
 
    const handleFavorite = () => {
     setIsFav(!isFav); // Invertir el valor actual de isFav
@@ -19,6 +21,15 @@ export const Card =({ image, name, species, gender, onClose, id })=> {
       dispatch(deleteFavorite(id));
     }
   };
+
+  //todo => con este useEffect mantenemos marcado el personaje como favorito y viseversa. 
+  useEffect(()=>{
+    myFavorites.forEach((fav)=> {
+      if(fav.id === id){
+        setIsFav(true)
+      }
+    })
+  })
 
   return (
     <div className={style.container}>
