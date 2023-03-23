@@ -64,9 +64,66 @@ strong{
 }
 
 .btn{
-    font-size: 1.6em;
-    text-decoration: underline;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #005C53;
+    border: none;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    padding: 14.5px;
+    width: 120px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    border: #DBF227 solid 1px;
 }
+
+.btn:hover{
+    box-shadow: 2px 5px 8px #9FC131, 2px -3px 8px #DBF227;
+}
+
+
+.loading{
+    display: flex;
+    margin-top: 10%;
+}
+
+.loader {
+    color: #11423d;
+    display: flex;
+    position: relative;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .loader::after {
+    content: '';  
+    width: 5px;
+    height: 5px;
+    background: currentColor;
+    position: absolute;
+    bottom: 10px;
+    right: -5px;
+    box-sizing: border-box;
+    animation: animloader 1s linear infinite;
+  }
+  
+  @keyframes animloader {
+    0% {
+      box-shadow: 10px 0 rgba(255, 255, 255, 0), 20px 0 rgba(255, 255, 255, 0);
+    }
+    50% {
+      box-shadow: 10px 0 #005C53, 20px 0 rgba(255, 255, 255, 0);
+    }
+    100% {
+      box-shadow: 10px 0 #005C53, 20px 0 #005C53;
+    }
+  }
+
+
+
 
 @media (max-width: 950px) {
     .titloH2{
