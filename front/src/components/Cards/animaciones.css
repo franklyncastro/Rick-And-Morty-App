@@ -1,0 +1,56 @@
+.containerPtext{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.pText {
+    background-image: linear-gradient(to right,  violet, violet, #DBF227);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+  }
+  
+  
+  @media (max-width: 998px) {
+    .containerPtext{
+        display: flex;
+        flex-direction: column;
+        margin-top: 25%;
+    }
+  }
+
+  @media (max-width: 950px) {
+    .containerPtext{
+        margin-top: 35%;
+    }
+  }
+
+  @media (max-width: 850px) {
+    .containerPtext{
+        margin-top: 50%;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .containerPtext{
+        margin-top: 65%;
+    }
+  }
+
+  @media (max-width: 460px) {
+    .containerPtext{
+        margin-top: 75%;
+    }
+    .pText{
+        font-size: 18px;
+    }
+  }
+
+
+ @media (max-width: 409px) {
+    .containerPtext{
+        margin-top: 100%;
+    }
+ }
