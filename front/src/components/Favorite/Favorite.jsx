@@ -22,15 +22,16 @@ export const Favorite = () => {
     <div className={style.container}>
       <div>
         <select onChange={handleOrder}>
-            <option value="order" disabled='disabled'>Order By</option>
+            <option value="order" disabled='disabled'>Ordenar por</option>
             <option value="Ascendente">Ascendente</option>
             <option value="Descendente">Descendente</option>
         </select>
         <select onChange={handleFilter}>
-          <option value="Male">Male</option>
-          <option value="Female">Female</option>
-          <option value="Unknown">Unknown</option>
-          <option value="Genderless">Genderless</option>
+        <option value="Filter" disabled='disabled'>Filtrar por</option>
+          <option value="Male">Hombre</option>
+          <option value="Female">Mujer</option>
+          <option value="Unknown">Desconocido</option>
+          <option value="Genderless">Sin Genero</option>
         </select>
       </div>
       {myFavorites.map((char) => {
