@@ -1,15 +1,38 @@
 import React from "react";
-// import { useState } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import style from "./Favorite.module.css";
 import { Link } from "react-router-dom";
 import './animaciones.css'
+import { filterCards, orderCards } from "../../redux/action";
 
 export const Favorite = () => {
   const { myFavorites } = useSelector((state) => state);
+  const dispatch = useDispatch();
+
+  const handleOrder =(e)=>{
+    dispatch(orderCards(e.target.value)) 
+  }
+
+  const handleFilter =(e)=>{
+    dispatch(filterCards(e.target.value))
+    console.log(filterCards(e.target.value))
+  }
 
   return (
     <div className={style.container}>
+      <div>
+        <select onChange={handleOrder}>
+            <option value="order" disabled='disabled'>Order By</option>
+            <option value="Ascendente">Ascendente</option>
+            <option value="Descendente">Descendente</option>
+        </select>
+        <select onChange={handleFilter}>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Unknown">Unknown</option>
+          <option value="Genderless">Genderless</option>
+        </select>
+      </div>
       {myFavorites.map((char) => {
         return (
           <div >

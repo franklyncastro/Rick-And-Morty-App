@@ -1,4 +1,4 @@
-import { ADD_FAVORITE, DELETE_FAVORITE } from "./action-types";
+import { ADD_FAVORITE, DELETE_FAVORITE, FILTER, ORDER } from "./action-types";
 import axios from "axios";
 
 export const addFavorite = (character) => {
@@ -40,8 +40,13 @@ export const deleteFavorite = (id) => {
   }
 };
 
+export const filterCards = (gender) => {
+  return { type: FILTER, payload: gender };
+};
 
-
+export const orderCards = (id) => {
+  return { type: ORDER, payload: id };
+};
 
 //! =+> Dispach para agregar favorito sin async-await
 // axios.post("http://localhost:3001/rickandmorty/fav", character)
@@ -49,8 +54,6 @@ export const deleteFavorite = (id) => {
 //   type: ADD_FAVORITE,
 //   payload: character,
 // };
-
-
 
 //! =+> Dispach para eliminar favorito sin async-await
 // axios.delete(`http://localhost:3001/rickandmorty/fav/${id}`);
