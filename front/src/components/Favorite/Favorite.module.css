@@ -5,9 +5,47 @@
     transition: all .9s;
     margin-top: 30px;
     gap: 20px;
-    flex-wrap: wrap;   
-}
-
+    flex-wrap: wrap;  
+  }
+  
+  .containerFilter {
+    position: fixed;
+    top:95px;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .container2 {
+    margin-top: 80px;
+  }
+  
+  select {
+    padding: 0.5rem 1rem;
+    margin: 0 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #f8f8f8;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  select:hover {
+    background-color: #eaeaea;
+  }
+  
+  select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+  }
+  
 
 .containerCard{
     display: flex;
@@ -25,10 +63,6 @@
 .containerCard:hover{
     box-shadow: 10px 15px 18px #080606, -10px -13px 18px #080606;
     transition: all .4s;
-    -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-    -ms-transition: all .4s;
-    -o-transition: all .4s;
 }
 
 .containerCard:hover{
@@ -70,52 +104,6 @@
     justify-content: space-between;
 }
 
-
-
-/* Estilos Boton Delete */
-
-.btnX {
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border: none;
-    position: relative;
-    border-radius: 10px;
-    -webkit-box-shadow: 1px 1px 5px .2px #00000035;
-    box-shadow: 1px 1px 5px .2px #00000035;
-    -webkit-transition: .2s linear;
-    transition: .2s linear;
-    transition-delay: .2s;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: space-between;
-  }
-  
-  .btnX:hover {
-    width: 150px;
-    transition-delay: .2s;
-  }
-  
-  .btnX:hover > .paragraph {
-    visibility: visible;
-    opacity: 1;
-    -webkit-transition-delay: .4s;
-    transition-delay: .4s;
-  }
-  
-  .btnX:hover > .iconWrapper .icon {
-    transform: scale(1.1);
-  }
-  
-  .btnX:hover > .iconWrapper .icon path {
-    stroke: #f40b0b;
-  }
   
   .paragraph {
     color: #f40b0b;

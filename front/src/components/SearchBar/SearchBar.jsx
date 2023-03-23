@@ -22,18 +22,16 @@ export default function SearchBar({ onSearch, random }) {
         onChange={handleSearch}
       />
       <div className={style.containerBtn}>
-        <button onClick={() => onSearch(character)} className={style.btn}>
+        
           <span>
-            <Link to="/home" className={style.link}>
+            <Link to="/home" onClick={() => onSearch(character)} className={style.btn}>
               Agregar
             </Link>
           </span>
-        </button>
-        <button className={style.btn} onClick={random}>
-          <Link to="/home" className={style.link}>
+        
+          <Link to="/home" className={style.btn} onClick={random}>
             <i class="fa-solid fa-shuffle"></i>
           </Link>
-        </button>
       </div>
     </div>
   );

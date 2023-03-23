@@ -20,23 +20,24 @@ export const Favorite = () => {
 
   return (
     <div className={style.container}>
-      <div>
+      <div className={style.containerFilter}>
         <select onChange={handleOrder}>
-            <option value="order" disabled='disabled'>Ordenar por</option>
+            <option value="order" disabled='disabled'>Order By</option>
             <option value="Ascendente">Ascendente</option>
             <option value="Descendente">Descendente</option>
         </select>
         <select onChange={handleFilter}>
-        <option value="Filter" disabled='disabled'>Filtrar por</option>
-          <option value="Male">Hombre</option>
-          <option value="Female">Mujer</option>
-          <option value="Unknown">Desconocido</option>
-          <option value="Genderless">Sin Genero</option>
+        <option value="Filter" disabled='disabled'>Filter By</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Unknown">Unknown</option>
+          <option value="Genderless">Genderless</option>
         </select>
       </div>
+      
       {myFavorites.map((char) => {
         return (
-          <div >
+          <div className={style.container2}>
             <div className={style.containerCard}>
               <div className={style.btnContainer}></div>
               <span className="animate__animated animate__bounce corazon"> ❤️ </span>
