@@ -99,63 +99,6 @@
     cursor: pointer;
 }
 
-.btnContainer{
-    display: flex;
-    justify-content: space-between;
-}
-
-  
-  .paragraph {
-    color: #f40b0b;
-    visibility: hidden;
-    opacity: 0;
-    font-size: 18px;
-    margin-right: 20px;
-    padding-left: 20px;
-    -webkit-transition: .2s linear;
-    transition: .2s linear;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .iconWrapper {
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .icon {
-    transform: scale(.9);
-    transition: .2s linear;
-  }
-  
-  .icon path {
-    stroke: #f40b0b;
-    stroke-width: 2px;
-    -webkit-transition: .2s linear;
-    transition: .2s linear;
-  }
-
-  /* Estilos boton favorito */
-
-  .fav{
-    cursor: pointer;
-    width: 50px;
-    height: 50px;
-    border: none;
-    border-radius: 10px;
-    -webkit-box-shadow: 1px 1px 5px .2px #00000035;
-    box-shadow: 1px 1px 5px .2px #00000035;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-  }
 
 /* Estilos del texto informacion */
 
@@ -206,11 +149,17 @@
     .containerCard{
       margin-top: 260px;
     }
+    .containerFilter{
+      top: 229px;
+    }
 }
 
   @media (max-width: 950px) {
     .containerCard{
       margin-top: 320px;
+    }
+    .containerFilter{
+      top: 286px;
     }
 }
  
@@ -220,6 +169,9 @@
     }
     .containerCard{
       margin-top: 360px;
+    }
+    .containerFilter{
+      top: 340px;
     }
 }
  

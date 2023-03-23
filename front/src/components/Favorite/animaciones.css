@@ -1,5 +1,14 @@
 .corazon{
-    font-size: 30px;
+   font-size: 30px;
+   border: 1px solid #000;
+   width: 60px;
+   height: 60px;
+   border-radius: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0 auto;
+   box-shadow: 0 2px 4px rgba(9, 5, 4, 9);
 }
 
 .animate__animated.animate__bounce {

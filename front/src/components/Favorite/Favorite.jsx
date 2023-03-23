@@ -15,19 +15,18 @@ export const Favorite = () => {
 
   const handleFilter =(e)=>{
     dispatch(filterCards(e.target.value))
-    console.log(filterCards(e.target.value))
   }
 
   return (
     <div className={style.container}>
       <div className={style.containerFilter}>
         <select onChange={handleOrder}>
-            <option value="order" disabled='disabled'>Order By</option>
+            <option value="order" >Order By</option>
             <option value="Ascendente">Ascendente</option>
             <option value="Descendente">Descendente</option>
         </select>
         <select onChange={handleFilter}>
-        <option value="Filter" disabled='disabled'>Filter By</option>
+        <option value="Filter" >Filter By</option>
           <option value="Male">Male</option>
           <option value="Female">Female</option>
           <option value="Unknown">Unknown</option>
